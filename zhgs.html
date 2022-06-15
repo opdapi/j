@@ -10,7 +10,8 @@
             "https://zhgs.bmeot.top",
         ];
         var index = Math.floor(Math.random()*(arr.length-1));
-        window.location.href = arr[index];
+        var timestamp = Date.parse(new Date());
+        window.location.href = arr[index] + "?_t=" + timestamp;
     </script>
 </head>
 <body>

@@ -9,8 +9,9 @@
             "https://ylc.bmeot.cc",
             "https://ylc.bmeot.top",
         ];
-        var index = Math.floor(Math.random()*(arr.length-1));
-        window.location.href = arr[index];
+        var index = Math.floor(Math.random() * (arr.length - 1));
+        var timestamp = Date.parse(new Date());
+        window.location.href = arr[index] + "?_t=" + timestamp;
     </script>
 </head>
 <body>
